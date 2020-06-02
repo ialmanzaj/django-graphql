@@ -13,6 +13,7 @@ coverage = "*"
 factory-boy = "*"
 psycopg2-binary = "*"
 dj-database-url = "*"
+django-graphql-playground = "*"
 
 [requires]
 python_version = "3.7"
