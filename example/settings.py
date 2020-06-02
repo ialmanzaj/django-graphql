@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +26,7 @@ SECRET_KEY = '2^8_(*8vkb@c588&zytf&nvokf^mdbgsq@b^9%)pwh0@t)y)6!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-pollsapi.ialmanzaj.now.sh']
 
 
 # Application definition
@@ -84,14 +85,15 @@ WSGI_APPLICATION = 'example.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+import dj_database_url
 
+
+DATABASE_URL = 'postgres://pmbqvzgv:hmYECwcoYQ_jVmJJ3v2pYnMR6vuKCUDG@arjuna.db.elephantsql.com:5432/pmbqvzgv'
+
+# Parse database configuration from $DATABASE_URL
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config(default=DATABASE_URL)
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
