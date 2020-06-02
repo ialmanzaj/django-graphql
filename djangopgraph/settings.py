@@ -141,5 +141,6 @@ NOSE_ARGS = [
     '--with-coverage',
     '--cover-html',
     '--cover-html-dir=htmlcov',
-
+     #'--with-xunit', # Add this and the following line
+    #'--xunit-file=xunittest.xml',  # xunittest.xml could be any name
 ]

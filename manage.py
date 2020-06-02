@@ -13,7 +13,7 @@ def main():
         is_testing = 'test' in sys.argv
         if is_testing:
             import coverage
-            cov = coverage.coverage(source=['movies', 'djangopgraph'], omit=['*/tests/*'])
+            cov = coverage.coverage(source=['movies', 'djangopgraph'], omit=['*/tests/*', '/*migrations*'])
             cov.erase()
             cov.start()
 
