@@ -6,14 +6,14 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangopgraph.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'example.settings')
     try:
         from django.core.management import execute_from_command_line
 
         is_testing = 'test' in sys.argv
         if is_testing:
             import coverage
-            cov = coverage.coverage(source=['movies', 'djangopgraph'], omit=['*/tests/*', '/*migrations*'])
+            cov = coverage.coverage(source=['movies', 'example'], omit=['*/tests/*', '/*migrations*'])
             cov.erase()
             cov.start()
 
