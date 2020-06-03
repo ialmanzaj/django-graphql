@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "aws_region": "us-east-1",
+        "runtime": "python3.7",
+        "django_settings": "example.settings",
+        "profile_name": "zappa",
+        "s3_bucket": "zappa-bucket-awesome",
+        "project_name": "django-graphql",
+        "timeout_seconds": 900,
+        "manage_roles": false,
+        "role_name": "ZappaDjangoRole",
+        "role_arn": "arn:aws:iam::340221275022:role/ZappaDjangoRole"
+    }
+}

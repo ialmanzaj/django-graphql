@@ -14,6 +14,7 @@ factory-boy = "*"
 psycopg2-binary = "*"
 dj-database-url = "*"
 django-graphql-playground = "*"
+zappa = "*"
 
 [requires]
 python_version = "3.7"
