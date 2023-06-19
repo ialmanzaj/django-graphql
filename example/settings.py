@@ -94,7 +94,7 @@ WSGI_APPLICATION = 'example.wsgi.application'
 import dj_database_url
 
 
-DATABASE_URL = f'postgres://{env("DB_USER")}:{env("DB_PASSWORD")}@{env("DB_DOMAIN")}:5432/{env("DB_NAME")}'
+DATABASE_URL = f'postgres://{env("DB_USER")}:{env("DB_PASSWORD")}@{env("DB_DOMAIN")}:{env("DB_PORT")}/{env("DB_NAME")}'
 
 # Parse database configuration from $DATABASE_URL
 DATABASES = {
