@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import environ
+
+# Initialise environment variables
+env = environ.Env()
+environ.Env.read_env()
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -89,7 +94,7 @@ WSGI_APPLICATION = 'example.wsgi.application'
 import dj_database_url
 
 
-DATABASE_URL = 'postgres://pmbqvzgv:hmYECwcoYQ_jVmJJ3v2pYnMR6vuKCUDG@arjuna.db.elephantsql.com:5432/pmbqvzgv'
+DATABASE_URL = f'postgres://{env("DB_USER")}:{env("DB_PASSWORD")}@{env("DB_DOMAIN")}:5432/{env("DB_NAME")}'
 
 # Parse database configuration from $DATABASE_URL
 DATABASES = {
