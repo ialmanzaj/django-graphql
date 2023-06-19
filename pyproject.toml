@@ -2,7 +2,7 @@
 name = "django-graphql"
 version = "0.1.0"
 description = ""
-authors = ["Isaac Almanza <isaac.almanza@apoyomultiple.com>"]
+authors = ["Isaac Almanza <isaac.almanza19@gmail.com>"]
 
 
 [tool.poetry.dependencies]
