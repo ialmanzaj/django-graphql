@@ -147,7 +147,7 @@ bcrypt = ["bcrypt"]
 name = "django-environ"
 version = "0.10.0"
 description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.5,<4"
 files = [
@@ -518,4 +518,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "04dfa59f4a05339704a79bcaf4516948313d2ea4ef023204b6458b2526c0cd30"
+content-hash = "0ea5ece6747dc89c5d6a0e55c5e1e3c136e0be34560057b5a85c57892011091e"
